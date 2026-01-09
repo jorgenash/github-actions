@@ -10,9 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Print greeting
-        run: echo "Hello World!"
+        run: |
+          echo "Multiline hello!"
+          echo "Hello World!"
       - name: Print Goodbye
-        run: echo "Done - bye!"
+        run: |
+          echo "Done - bye!"
+          echo "Multiline bye!"
 
         
     
